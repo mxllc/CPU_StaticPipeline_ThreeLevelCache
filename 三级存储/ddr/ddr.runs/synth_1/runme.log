@@ -1,0 +1,1500 @@
+
+*** Running vivado
+    with args -log sccomp_dataflow.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source sccomp_dataflow.tcl -notrace
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7000 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 412.719 ; gain = 91.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccomp_dataflow' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (1#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'static_cpu' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:419]
+INFO: [Synth 8-226] default block is never used [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:430]
+INFO: [Synth 8-226] default block is never used [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:449]
+INFO: [Synth 8-226] default block is never used [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:461]
+INFO: [Synth 8-6157] synthesizing module 'CONTROL' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CONTROL' (2#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:850]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (3#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:850]
+INFO: [Synth 8-6157] synthesizing module 'CLZ' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1097]
+INFO: [Synth 8-6155] done synthesizing module 'CLZ' (4#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1097]
+INFO: [Synth 8-6157] synthesizing module 'CP0' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1420]
+WARNING: [Synth 8-3848] Net timer_int in module/entity CP0 does not have driver. [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1434]
+INFO: [Synth 8-6155] done synthesizing module 'CP0' (5#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1420]
+INFO: [Synth 8-6157] synthesizing module 'Regfiles' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1195]
+INFO: [Synth 8-6155] done synthesizing module 'Regfiles' (6#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1195]
+INFO: [Synth 8-6157] synthesizing module 'DIV' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1269]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1286]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1286]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1290]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1286]
+WARNING: [Synth 8-5788] Register r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1330]
+INFO: [Synth 8-6155] done synthesizing module 'DIV' (7#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1269]
+INFO: [Synth 8-6157] synthesizing module 'DIVU' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1365]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1384]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1382]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1382]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1382]
+INFO: [Synth 8-6155] done synthesizing module 'DIVU' (8#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1365]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_ex_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:633]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_ex_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:634]
+WARNING: [Synth 8-6014] Unused sequential element clz_ex_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:639]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_mem_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:739]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_mem_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:740]
+WARNING: [Synth 8-6014] Unused sequential element multu_mem_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:754]
+WARNING: [Synth 8-6014] Unused sequential element mult_mem_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:755]
+WARNING: [Synth 8-6014] Unused sequential element pc_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:799]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:800]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:801]
+WARNING: [Synth 8-6014] Unused sequential element HI_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:802]
+WARNING: [Synth 8-6014] Unused sequential element LO_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:803]
+WARNING: [Synth 8-6014] Unused sequential element DM_W_wb_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:804]
+WARNING: [Synth 8-5788] Register aluc_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:620]
+WARNING: [Synth 8-5788] Register alu_a_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:620]
+WARNING: [Synth 8-5788] Register alu_b_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:620]
+WARNING: [Synth 8-5788] Register rf_waddr_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:590]
+WARNING: [Synth 8-5788] Register HI_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:678]
+WARNING: [Synth 8-5788] Register LO_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:679]
+WARNING: [Synth 8-5788] Register RMemMode_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:680]
+WARNING: [Synth 8-5788] Register WMemMode_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:681]
+WARNING: [Synth 8-5788] Register sign_lblh_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:682]
+WARNING: [Synth 8-5788] Register rf_rdata1_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:232]
+WARNING: [Synth 8-5788] Register rf_waddr_mem_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:596]
+WARNING: [Synth 8-5788] Register rf_waddr_wb_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:600]
+WARNING: [Synth 8-3848] Net mult_z in module/entity static_cpu does not have driver. [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'static_cpu' (9#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ddrmem_controller' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:30]
+	Parameter STATE_IDLE bound to: 0 - type: integer 
+	Parameter STATE_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter STATE_WRITE_PRE bound to: 2 - type: integer 
+	Parameter STATE_WRITE bound to: 3 - type: integer 
+	Parameter STATE_WAIT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sdmem_controller' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:297]
+INFO: [Synth 8-6157] synthesizing module 'labkit' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:315]
+	Parameter STATE_INIT bound to: 0 - type: integer 
+	Parameter STATE_START bound to: 1 - type: integer 
+	Parameter STATE_WRITE bound to: 2 - type: integer 
+	Parameter STATE_READ bound to: 3 - type: integer 
+	Parameter STATE_START_READ bound to: 4 - type: integer 
+	Parameter STATE_WAIT bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:596]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (10#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:596]
+INFO: [Synth 8-6157] synthesizing module 'sd_controller' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:607]
+	Parameter RST bound to: 0 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter CMD0 bound to: 2 - type: integer 
+	Parameter CMD55 bound to: 3 - type: integer 
+	Parameter CMD41 bound to: 4 - type: integer 
+	Parameter POLL_CMD bound to: 5 - type: integer 
+	Parameter IDLE bound to: 6 - type: integer 
+	Parameter READ_BLOCK bound to: 7 - type: integer 
+	Parameter READ_BLOCK_WAIT bound to: 8 - type: integer 
+	Parameter READ_BLOCK_DATA bound to: 9 - type: integer 
+	Parameter READ_BLOCK_CRC bound to: 10 - type: integer 
+	Parameter SEND_CMD bound to: 11 - type: integer 
+	Parameter RECEIVE_BYTE_WAIT bound to: 12 - type: integer 
+	Parameter RECEIVE_BYTE bound to: 13 - type: integer 
+	Parameter WRITE_BLOCK_CMD bound to: 14 - type: integer 
+	Parameter WRITE_BLOCK_INIT bound to: 15 - type: integer 
+	Parameter WRITE_BLOCK_DATA bound to: 16 - type: integer 
+	Parameter WRITE_BLOCK_BYTE bound to: 17 - type: integer 
+	Parameter WRITE_BLOCK_WAIT bound to: 18 - type: integer 
+	Parameter WRITE_DATA_SIZE bound to: 515 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:680]
+INFO: [Synth 8-6155] done synthesizing module 'sd_controller' (11#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:607]
+INFO: [Synth 8-6157] synthesizing module 'dist_sdmem_ip' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_sdmem_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_sdmem_ip' (12#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_sdmem_ip_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:499]
+WARNING: [Synth 8-6014] Unused sequential element next_byte_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:484]
+WARNING: [Synth 8-6014] Unused sequential element byte_cnt_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:487]
+WARNING: [Synth 8-6014] Unused sequential element only_one_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:489]
+WARNING: [Synth 8-6014] Unused sequential element flag_wr_adr_ready_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:493]
+WARNING: [Synth 8-6014] Unused sequential element flag_rd_adr_ready_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:494]
+WARNING: [Synth 8-5788] Register adr_reg in module labkit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:377]
+INFO: [Synth 8-6155] done synthesizing module 'labkit' (13#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:315]
+INFO: [Synth 8-6155] done synthesizing module 'sdmem_controller' (14#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:297]
+INFO: [Synth 8-6157] synthesizing module 'sealedDDR' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:9]
+	Parameter readInsistLoop bound to: 256 - type: integer 
+	Parameter writeInsistLoop bound to: 256 - type: integer 
+	Parameter ddr_startLoop bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (15#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_divider' of module 'clk_wiz_0' requires 4 connections, but only 2 given [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:55]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_wr' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:361]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_write_control' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:240]
+	Parameter DQ_WIDTH bound to: 16 - type: integer 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 16 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter WRITE bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_write_control' (16#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:240]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_read_control' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:167]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter READ bound to: 5'b00010 
+	Parameter WAIT bound to: 5'b00100 
+	Parameter ADDR_ACCUMULATE bound to: 5'b01000 
+	Parameter WAIT_FOR_CONFIG bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_read_control' (17#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:167]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_ram' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/ddr2_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_ram' (18#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/ddr2_ram_stub.v:5]
+WARNING: [Synth 8-3848] Net rdqs_n in module/entity ddr2_wr does not have driver. [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_wr' (19#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:361]
+WARNING: [Synth 8-6014] Unused sequential element wake_count_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'sealedDDR' (20#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:9]
+WARNING: [Synth 8-689] width (128) of port connection 'data_to_DDR' does not match port width (32) of module 'sealedDDR' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:105]
+WARNING: [Synth 8-689] width (128) of port connection 'data_from_DDR' does not match port width (32) of module 'sealedDDR' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:107]
+WARNING: [Synth 8-350] instance 'sealedDDR_0' of module 'sealedDDR' requires 23 connections, but only 22 given [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:101]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:154]
+INFO: [Synth 8-6157] synthesizing module 'dist_ddrmem_ip' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_ddrmem_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_ddrmem_ip' (21#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_ddrmem_ip_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:248]
+WARNING: [Synth 8-6014] Unused sequential element ddrmem_first_write_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:240]
+WARNING: [Synth 8-5788] Register sd_init_reg in module ddrmem_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:89]
+WARNING: [Synth 8-5788] Register read_write_reg in module ddrmem_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'ddrmem_controller' (22#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:30]
+INFO: [Synth 8-6157] synthesizing module 'dist_dmem_ip' [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_dmem_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_dmem_ip' (23#1) [C:/Users/agogow5/ddr/ddr.runs/synth_1/.Xil/Vivado-7128-DESKTOP-5CQ3CUI/realtime/dist_dmem_ip_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'io_sel' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'io_sel' (24#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:164]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:177]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (25#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:177]
+INFO: [Synth 8-6157] synthesizing module 'sw_mem_sel' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'sw_mem_sel' (26#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'sccomp_dataflow' (27#1) [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sccomp_dataflow.v:23]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[127]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[126]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[125]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[124]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[123]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[122]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[121]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[120]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[119]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[118]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[117]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[116]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[115]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[114]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[113]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[112]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[111]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[110]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[109]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[108]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[107]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[106]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[105]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[104]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[103]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[102]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[101]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[100]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[99]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[98]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[97]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[96]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[95]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[94]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[93]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[92]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[91]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[90]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[89]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[88]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[87]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[86]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[85]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[84]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[83]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[82]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[81]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[80]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[79]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[78]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[77]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[76]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[75]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[74]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[73]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[72]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[71]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[70]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[69]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[68]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[67]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[66]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[65]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[64]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[63]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[62]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[61]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[60]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[59]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[58]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[57]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[56]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[55]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[54]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[53]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[52]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[51]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[50]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[49]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[48]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[47]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[46]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[45]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[44]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[43]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[42]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[41]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[40]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[39]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[38]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[37]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[36]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[35]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[34]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[33]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[32]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[31]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[30]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[29]
+WARNING: [Synth 8-3331] design ddr2_read_control has unconnected port app_rd_data[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 482.363 ; gain = 160.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 482.363 ; gain = 160.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 482.363 ; gain = 160.688
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_dmem_ip/dist_dmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'DMEM'
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_dmem_ip/dist_dmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'DMEM'
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_ddrmem_ip/dist_ddrmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'dcl/DDRMEM'
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_ddrmem_ip/dist_ddrmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'dcl/DDRMEM'
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc] for cell 'dcl/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram'
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc] for cell 'dcl/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram'
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'dcl/sealedDDR_0/clk_divider'
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'dcl/sealedDDR_0/clk_divider'
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_sdmem_ip/dist_sdmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'dcl/sdc/sdlab/SDMEM'
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/dist_sdmem_ip/dist_sdmem_ip/dist_sdmem_ip_in_context.xdc] for cell 'dcl/sdc/sdlab/SDMEM'
+Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_inst'
+WARNING: [Constraints 18-619] A clock with name 'clk_in' already exists, overwriting the previous clock with the same name. [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_inst'
+Parsing XDC File [C:/Users/agogow5/ddr/ddr.srcs/constrs_1/new/ddr_xdc.xdc]
+Finished Parsing XDC File [C:/Users/agogow5/ddr/ddr.srcs/constrs_1/new/ddr_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/agogow5/ddr/ddr.srcs/constrs_1/new/ddr_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_dataflow_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/agogow5/ddr/ddr.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/agogow5/ddr/ddr.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 860.219 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dcl/DDRMEM' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dcl/sdc/sdlab/SDMEM' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 860.219 ; gain = 538.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 860.219 ; gain = 538.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  c:/Users/agogow5/ddr/ddr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for DMEM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dcl/DDRMEM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dcl/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dcl/sealedDDR_0/clk_divider. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dcl/sdc/sdlab/SDMEM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 860.219 ; gain = 538.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rf_write" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_W" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_R" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_extend" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_a" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_b" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cause1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RMemMode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_lblh" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "syscall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "teq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1286]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:1382]
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:241]
+INFO: [Synth 8-5544] ROM "start_div" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_divu" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boot_counter" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "byte_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready_for_next_byte" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'bytes_read_reg' in module 'labkit'
+INFO: [Synth 8-802] inferred FSM for state register 'test_state_reg' in module 'labkit'
+INFO: [Synth 8-5546] ROM "rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bytes" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_sdmem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sd_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bytes" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_sdmem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sd_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "adr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'app_wdf_end_reg' into 'app_en_reg' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:301]
+INFO: [Synth 8-4471] merging register 'app_wdf_wren_reg' into 'app_en_reg' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:302]
+WARNING: [Synth 8-6014] Unused sequential element app_wdf_end_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:301]
+WARNING: [Synth 8-6014] Unused sequential element app_wdf_wren_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:302]
+INFO: [Synth 8-5544] ROM "read_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'ddr2_read_control'
+INFO: [Synth 8-5546] ROM "app_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ddrmem_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'ddrmem_state_reg' in module 'ddrmem_controller'
+INFO: [Synth 8-5546] ROM "read_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddrmem_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddrmem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ddrmem_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ddr_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ddrmem_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ddrmem_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                             0001 |                               00
+                 iSTATE1 |                             0010 |                               01
+                 iSTATE2 |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bytes_read_reg' using encoding 'one-hot' in module 'labkit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                               00 |                              000
+        STATE_START_READ |                               01 |                              100
+              STATE_READ |                               10 |                              011
+              STATE_WAIT |                               11 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'test_state_reg' using encoding 'sequential' in module 'labkit'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm1C73C0B3C100'
+WARNING: [Synth 8-327] inferring latch for variable 'app_cmd_reg' [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:425]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                             0000
+        STATE_WRITE_WAIT |                               01 |                             0001
+             STATE_WRITE |                               10 |                             0011
+              STATE_WAIT |                               11 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ddrmem_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                             0000
+             STATE_WRITE |                               01 |                             0011
+              STATE_WAIT |                               10 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ddrmem_state_reg' using encoding 'sequential' in module 'ddrmem_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 860.219 ; gain = 538.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 19    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 104   
+	               27 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 47    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 49    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input     11 Bit        Muxes := 1     
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	  20 Input      5 Bit        Muxes := 2     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  20 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   4 Input      2 Bit        Muxes := 5     
+	  20 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 146   
+	  14 Input      1 Bit        Muxes := 4     
+	  20 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sccomp_dataflow 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  14 Input      1 Bit        Muxes := 4     
+Module CLZ 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      6 Bit        Muxes := 1     
+Module CP0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 38    
+Module Regfiles 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module DIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module DIVU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module static_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 24    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 19    
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	  20 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module labkit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+Module ddr2_write_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module ddr2_read_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+Module ddr2_wr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sealedDDR 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module ddrmem_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 6     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module sw_mem_sel 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:234]
+DSP Report: Generating DSP mul_z, operation Mode is: A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP multu_z, operation Mode is: A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+WARNING: [Synth 8-6014] Unused sequential element sdlab/sdcont/ready_for_next_byte_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/ddrmem_controller.v:687]
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/bit_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/byte_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "sdlab/sdcont/boot_counter" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdlab/sdcont/state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "sdlab/sdcont/ready_for_next_byte" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/ACK_O_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:305]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/read_en_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:304]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/app_addr_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:300]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_weight_load_ins/app_addr_reg was removed.  [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/sealedDDR.v:202]
+INFO: [Synth 8-5546] ROM "ddrmem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddrmem_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dcl/sdc/sdlab/sdcont/cmd_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/flag_srd_adr_ready_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/sector_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/sector_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/sector_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/sector_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/sector_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/write_bytes_next_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[4] )
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[6]' (FDC) to 'sccpu/clz_result_mem_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[7]' (FDC) to 'sccpu/clz_result_mem_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[8]' (FDC) to 'sccpu/clz_result_mem_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[9]' (FDC) to 'sccpu/clz_result_mem_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[10]' (FDC) to 'sccpu/clz_result_mem_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[11]' (FDC) to 'sccpu/clz_result_mem_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[12]' (FDC) to 'sccpu/clz_result_mem_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[13]' (FDC) to 'sccpu/clz_result_mem_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[14]' (FDC) to 'sccpu/clz_result_mem_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[15]' (FDC) to 'sccpu/clz_result_mem_reg[16]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[16]' (FDC) to 'sccpu/clz_result_mem_reg[17]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[17]' (FDC) to 'sccpu/clz_result_mem_reg[18]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[18]' (FDC) to 'sccpu/clz_result_mem_reg[19]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[19]' (FDC) to 'sccpu/clz_result_mem_reg[20]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[20]' (FDC) to 'sccpu/clz_result_mem_reg[21]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[21]' (FDC) to 'sccpu/clz_result_mem_reg[22]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[22]' (FDC) to 'sccpu/clz_result_mem_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[23]' (FDC) to 'sccpu/clz_result_mem_reg[24]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[24]' (FDC) to 'sccpu/clz_result_mem_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[25]' (FDC) to 'sccpu/clz_result_mem_reg[26]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[26]' (FDC) to 'sccpu/clz_result_mem_reg[27]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[27]' (FDC) to 'sccpu/clz_result_mem_reg[28]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[28]' (FDC) to 'sccpu/clz_result_mem_reg[29]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[29]' (FDC) to 'sccpu/clz_result_mem_reg[30]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz_result_mem_reg[30]' (FDC) to 'sccpu/clz_result_mem_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sccpu/\clz_result_mem_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/cstate_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[3]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[4]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[1]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[1]' (FDE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[6] )
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[32]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[33]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[33]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[34]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[34]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[35]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[35]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[36]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[36]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[37]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[37]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[38]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[38]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[39]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[39]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[40]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[40]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[41]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[41]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[42]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[42]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[43]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[43]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[44]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[44]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[45]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[45]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[46]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[46]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[47]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[47]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[48]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[48]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[49]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[49]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[50]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[50]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[51]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[51]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[52]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[52]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[53]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[53]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[54]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[54]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[55]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[55]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[56]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[56]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[57]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[57]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[58]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[58]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[59]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[59]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[60]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[60]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[61]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[61]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[62]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[62]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[63]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[63]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[64]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[65]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[65]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[66]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[66]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[67]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[67]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[68]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[68]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[69]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[69]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[70]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[70]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[71]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[71]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[72]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[72]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[73]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[73]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[74]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[74]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[75]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[76]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[76]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[77]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[77]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[78]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[78]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[79]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[79]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[80]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[80]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[81]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[81]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[82]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[82]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[83]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[83]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[84]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[84]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[85]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[85]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[86]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[86]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[87]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[87]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[88]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[88]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[89]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[89]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[90]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[90]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[91]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[91]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[92]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[92]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[93]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[93]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[94]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[94]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[95]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[95]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[96]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[96]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[97]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[97]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[98]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[98]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[99]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[99]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[100]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[100]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[101]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[101]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[102]'
+INFO: [Synth 8-3886] merging instance 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[102]' (FDRE) to 'dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[103]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/wr_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sdc/sdlab/din_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg7/o_seg_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dcl/sealedDDR_0/ddr2_wr_ins/app_cmd_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (clz_result_mem_reg[31]) is unused and will be removed from module static_cpu.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[7]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[6]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[5]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[4]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[3]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[1]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/din_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/flag_srd_adr_ready_reg) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[7]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[6]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[5]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[4]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[3]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[1]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/adr_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sdcont/cmd_out_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/write_bytes_next_reg) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sd_write_nxt_first_reg) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sector_cnt_reg[4]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sector_cnt_reg[3]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sector_cnt_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sector_cnt_reg[1]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/sector_cnt_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/wr_reg) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[31]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[30]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[29]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[28]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[27]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[26]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[25]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[24]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[23]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[22]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[21]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[20]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[19]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[18]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[17]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[16]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[15]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[14]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[13]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdc/sdlab/addr_sdmem_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/app_cmd_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/cstate_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[127]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[31]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[30]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[29]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[28]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[27]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[26]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[25]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[24]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[1]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[31]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[30]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[29]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[28]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[27]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[26]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[25]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[24]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[1]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/addr_in_ddr_mem_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[31]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[30]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[29]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[28]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[27]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[26]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[25]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[24]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[23]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[22]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[21]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[20]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[19]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[18]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[17]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[16]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[15]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[14]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[13]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/ddrmem_addr_reg[0]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[31]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[30]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[29]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[28]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[27]) is unused and will be removed from module sccomp_dataflow.
+WARNING: [Synth 8-3332] Sequential element (dcl/sdmem_adr_reg[26]) is unused and will be removed from module sccomp_dataflow.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 860.219 ; gain = 538.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|static_cpu  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|static_cpu  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'dcl/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/ui_clk' to pin 'dcl/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'dcl/sealedDDR_0/clk_divider/clk_out1' to pin 'dcl/sealedDDR_0/clk_divider/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk_in'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out1' to pin 'clk_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 889.930 ; gain = 568.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 912.645 ; gain = 590.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/rfl/array_reg_reg[0][31] )
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/agogow5/ddr/ddr.srcs/sources_1/new/static_cpu.v:233]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dcl/sealedDDR_0/clk_divider  has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_1      |         1|
+|2     |dist_dmem_ip   |         1|
+|3     |dist_ddrmem_ip |         1|
+|4     |dist_sdmem_ip  |         1|
+|5     |clk_wiz_0      |         1|
+|6     |ddr2_ram       |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0      |     1|
+|2     |clk_wiz_1      |     1|
+|3     |ddr2_ram       |     1|
+|4     |dist_ddrmem_ip |     1|
+|5     |dist_dmem_ip   |     1|
+|6     |dist_sdmem_ip  |     1|
+|7     |BUFG           |     1|
+|8     |CARRY4         |   277|
+|9     |DSP48E1        |     5|
+|10    |DSP48E1_1      |     2|
+|11    |LUT1           |   179|
+|12    |LUT2           |   848|
+|13    |LUT3           |   551|
+|14    |LUT4           |   354|
+|15    |LUT5           |   447|
+|16    |LUT6           |  1584|
+|17    |MUXF7          |   389|
+|18    |MUXF8          |    32|
+|19    |FDCE           |  3076|
+|20    |FDPE           |    31|
+|21    |FDRE           |   572|
+|22    |FDSE           |    21|
+|23    |LD             |     1|
+|24    |IBUF           |    18|
+|25    |OBUF           |    38|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------+------+
+|      |Instance                     |Module             |Cells |
++------+-----------------------------+-------------------+------+
+|1     |top                          |                   |  8690|
+|2     |  dcl                        |ddrmem_controller  |  1713|
+|3     |    sdc                      |sdmem_controller   |   591|
+|4     |      sdlab                  |labkit             |   591|
+|5     |        div1                 |clock_divider      |     2|
+|6     |        div2                 |clock_divider_0    |     2|
+|7     |        sdcont               |sd_controller      |   408|
+|8     |    sealedDDR_0              |sealedDDR          |   815|
+|9     |      ddr2_wr_ins            |ddr2_wr            |   413|
+|10    |        ddr2_weight_load_ins |ddr2_read_control  |     6|
+|11    |        ddr2_write_ctr_imp   |ddr2_write_control |    46|
+|12    |  sccpu                      |static_cpu         |  6790|
+|13    |    cp0_inst                 |CP0                |  1581|
+|14    |    div_inst                 |DIV                |   574|
+|15    |    divu_inst                |DIVU               |   608|
+|16    |    rfl                      |Regfiles           |  2081|
+|17    |  seg7                       |seg7x16            |    92|
++------+-----------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 201 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 972.465 ; gain = 272.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 972.465 ; gain = 650.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 724 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+412 Infos, 263 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 972.465 ; gain = 650.789
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/agogow5/ddr/ddr.runs/synth_1/sccomp_dataflow.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sccomp_dataflow_utilization_synth.rpt -pb sccomp_dataflow_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 972.465 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 22:51:29 2018...
